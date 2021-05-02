@@ -1,2 +1,2 @@
 # Calulator
-Simple Calculator in C++
+Simple Calculator in C++ : {BUGGED} the widgets is crashing.
