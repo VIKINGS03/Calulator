@@ -1,0 +1,61 @@
+#ifndef CALCULATOR_H
+#define CALCULATOR_H
+
+#include QWidget
+#include QGridLayout
+#include QLineEdit
+#include QLabel
+#include QPushButton
+#include QLCDNumber
+#include QString
+#include QMessageBox
+#include QErrorMessage
+
+class Calculator : public QWidget {
+
+Q_OBJECT
+
+public:
+
+//constructor
+
+Calculator();
+
+public slots:
+
+//function to add the two numbers that the user inputs
+
+void addition();
+
+//function to subtract the two numbers that the user inputs
+
+void subtraction();
+
+//function to multiply the two numbers that the user inputs
+
+void multiply();
+
+//function to divide the two numbers that the user inputs
+
+void division();
+
+//function to clear widgets
+
+void clearFields();
+
+//function to close window
+
+void close();
+
+private:
+
+int1Entry = new QLineEdit;
+int2Entry = new QLineEdit;
+QLineEdit* int1Entry;
+QLineEdit* int2Entry;
+QLCDNumber* lineoutput;
+QErrorMessage* error;
+
+};
+
+#endif
